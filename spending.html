@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>priceless travels</title>
+    
+    <!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+
+    <header id="header">
+        <nav class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="profile.html"><img src="images/logo.png" alt="logo"></a>
+                </div>
+                
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="profile.html">profile</a></li>
+                        <li class="active"><a href="spending.html">spending</a></li> 
+                        <li><a href="pc.html">priceless cities</a></li>
+                        <li><a href="wallet.html">wallet</a></li>
+                        <li><a href="offers.html">offers</a></li>                        
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
+
+    <section id="middle" class="container">
+                  
+        <div class="row">
+				<div class="col-md-7 wow fadeInDown">
+                <div id="pie"></div>
+                    <!--a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1">
+                        <div class="progress-wrap">
+                            <h3>Available balance</h3><br>
+                            <div class="progress">
+                              <div class="progress-bar newcolor1" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                               <span class="bar-width">€30.24</span>
+                              </div>
+                            </div>
+                        </div>
+                    </a-->
+                </div>
+                <div class="col-md-5 wow fadeInDown">
+                    <h2>Points Earned by Tier</h2>
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1">
+                            <div class="progress-wrap">
+                                <h3>Point Balance</h3><br>
+                                <div class="progress">
+                                  <div class="progress-bar  newcolor6" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+                                    <span class="bar-width">4500 Points</span>
+                                  </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseFour1">
+                            <div class="progress-wrap">
+                                <h3>To Reach Tier 5</h3><br>
+                                <div class="progress">
+                                  <div class="progress-bar newcolor5" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
+                                    <span class="bar-width">9500 Points</span>
+                                  </div>
+                                </div>
+                            </div>
+                         </a>
+                </div>
+                 
+            </div><!--/.row-->
+		<h2>Spending Breakdown</h2>
+        <table id="budget" class="table table-striped table-bordered" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Merchant</th>
+                <th>Price</th>
+				<th>Points</th>
+            </tr>
+        </thead>
+        <tbody>
+             <tr class="sucess">
+                <td>01/05/17</td>
+                <td>McDonalds</td>
+                <td>€5.00</td>
+				<td>5</td>
+            </tr>
+            <tr class="danger">
+                <td>22/05/17</td>
+                <td>Ristorante Il Tino (Priceless)</td>
+                <td>€60.00</td>
+				<td>120</td>
+            </tr>
+            <tr class="sucess">
+                <td>23/05/17</td>
+                <td>My-Taxi</td>
+                <td>€10.00</td>
+				<td>10</td>
+            </tr>
+            <tr class="danger">
+                <td>04/05/17</td>
+                <td>Grand Hotel Ritz (Priceless)</td>
+                <td>€250.00</td>
+				<td>500</td>
+            </tr>
+            <tr class="sucess">
+                <td>25/05/17</td>
+                <td>Aer Lingus - DUB to FCO</td>
+                <td>€900.00</td>
+				<td>900</td>
+            </tr>
+            <tr class="danger">
+                <td>09/05/17</td>
+                <td>Blue Marlin & Co  (Priceless)</td>
+                <td>€170.00</td>
+				<td>340</td>
+            </tr>
+            <tr class="sucess">
+                <td>07/05/17</td>
+                <td>Bartolucci Italy S. R. L.</td>
+                <td>€90.00</td>
+				<td>90</td>
+            </tr>
+            <tr class="danger">
+                <td>02/05/17</td>
+                <td>Delia Beauty Spa  (Priceless)</td>
+                <td>€80.00</td>
+				<td>160</td>
+            </tr>
+            <tr class="sucess">
+                <td>13/05/17</td>
+                <td>Cinema dei Piccoli</td>
+                <td>€18.00</td>
+				<td>18</td>
+            </tr>
+            <tr class="danger">
+                <td>21/05/17</td>
+                <td>QCTerme (Priceless)</td>
+                <td>€290.00</td>
+				<td>580</td>
+            </tr>
+            <tr class="danger">
+                <td>14/05/17</td>
+                <td>Pure Sermoneta (Priceless)</td>
+                <td>€200.00</td>
+				<td>400</td>
+            </tr>
+            <tr class="danger">
+                <td>17/05/17</td>
+                <td>Degli Effetti (Priceless)</td>
+                <td>€230.00</td>
+				<td>460</td>
+            </tr>
+            <tr class="danger">
+                <td>27/05/17</td>
+                <td>Nikilò (Priceless)</td>
+                <td>€50.00</td>
+				<td>100</td>
+            </tr>
+            <tr class="sucess">
+                <td>29/05/17</td>
+                <td>J.K. Place Roma</td>
+                <td>€2,500.00</td>
+				<td>2500</td>
+            </tr>
+            <tr class="danger">
+                <td>02/05/17</td>
+                <td>Palazzo Antici Mattei di Giove (Priceless)</td>
+                <td>€25.00</td>
+				<td>50</td>
+            </tr>
+            <tr class="danger">
+                <td>09/05/17</td>
+                <td>Mycupoftea (Priceless)</td>
+                <td>€15.00</td>
+				<td>30</td>
+            </tr>
+            <tr class="sucess">
+                <td>08/05/17</td>
+                <td>My-Taxi</td>
+                <td>€10.00</td>
+				<td>10</td>
+            </tr>
+            <tr class="danger">
+                <td>05/05/17</td>
+                <td>Cinecittà Studios (Priceless)</td>
+                <td>€305.00</td>
+				<td>610</td>
+            </tr>
+            <tr class="sucess">
+                <td>06/05/17</td>
+                <td>My-Taxi</td>
+                <td>€14.38</td>
+				<td>14</td>
+            </tr>
+            <tr class="danger">
+                <td>10/05/17</td>
+                <td>Colosseo</td>
+                <td>€30.00</td>
+				<td>60</td>
+            </tr>
+            
+            </tbody>
+    </table>
+    
+    </section><!--/#blog-->
+
+     <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2017 <a target="_blank" href="index.html">priceless travels</a>. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap.min.js"></script>
+    <script src="js/highcharts.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+</body>
+</html>

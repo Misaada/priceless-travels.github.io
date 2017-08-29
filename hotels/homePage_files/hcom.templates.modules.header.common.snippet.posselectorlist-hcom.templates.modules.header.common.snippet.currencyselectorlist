@@ -1,0 +1,76 @@
+/*! generated/hcom.templates.modules.header.common.snippet.posselectorlist.js*/
+// This file was automatically generated from pos-currencies.soy.
+// Please don't edit this file by hand.
+
+/**
+ * @fileoverview Templates in namespace hcom.templates.modules.header.common.snippet.
+ * @public
+ */
+
+if (typeof hcom == 'undefined') { window.hcom = {}; }
+if (typeof hcom.templates == 'undefined') { hcom.templates = {}; }
+if (typeof hcom.templates.modules == 'undefined') { hcom.templates.modules = {}; }
+if (typeof hcom.templates.modules.header == 'undefined') { hcom.templates.modules.header = {}; }
+if (typeof hcom.templates.modules.header.common == 'undefined') { hcom.templates.modules.header.common = {}; }
+if (typeof hcom.templates.modules.header.common.snippet == 'undefined') { hcom.templates.modules.header.common.snippet = {}; }
+
+
+hcom.templates.modules.header.common.snippet.posselectorlist = function(opt_data, opt_ignored, opt_ijData) {
+  var output = '<ul>';
+  var posList15 = opt_data.points_of_sale.pos;
+  var posListLen15 = posList15.length;
+  for (var posIndex15 = 0; posIndex15 < posListLen15; posIndex15++) {
+    var posData15 = posList15[posIndex15];
+    output += '<li><a href="' + soy.$$escapeHtmlAttribute(soy.$$filterNormalizeUri(posData15.href)) + '" rel="nofollow" lang="' + soy.$$escapeHtmlAttribute(posData15.lang) + '" hreflang="' + soy.$$escapeHtmlAttribute(posData15.lang) + '"><span class="sprite sprite-flags sprite-flags-' + soy.$$escapeHtmlAttribute(posData15.flag_iso ? posData15.flag_iso : 'blank') + '"></span>\u200F' + soy.$$escapeHtml(posData15.label) + '</a></li>';
+  }
+  output += '</ul>';
+  return soydata.VERY_UNSAFE.ordainSanitizedHtml(output);
+};
+if (goog.DEBUG) {
+  hcom.templates.modules.header.common.snippet.posselectorlist.soyTemplateName = 'hcom.templates.modules.header.common.snippet.posselectorlist';
+}
+
+/*! generated/hcom.templates.modules.header.common.snippet.currencyselectorlist.js*/
+// This file was automatically generated from pos-currencies.soy.
+// Please don't edit this file by hand.
+
+/**
+ * @fileoverview Templates in namespace hcom.templates.modules.header.common.snippet.
+ * @public
+ */
+
+if (typeof hcom == 'undefined') { window.hcom = {}; }
+if (typeof hcom.templates == 'undefined') { hcom.templates = {}; }
+if (typeof hcom.templates.modules == 'undefined') { hcom.templates.modules = {}; }
+if (typeof hcom.templates.modules.header == 'undefined') { hcom.templates.modules.header = {}; }
+if (typeof hcom.templates.modules.header.common == 'undefined') { hcom.templates.modules.header.common = {}; }
+if (typeof hcom.templates.modules.header.common.snippet == 'undefined') { hcom.templates.modules.header.common.snippet = {}; }
+
+
+hcom.templates.modules.header.common.snippet.currencyselectorlist = function(opt_data, opt_ignored, opt_ijData) {
+  var output = '';
+  if (opt_data.currencies.matched) {
+    output += '<ul class="pos-currency-options">';
+    var matchedList15 = opt_data.currencies.matched;
+    var matchedListLen15 = matchedList15.length;
+    for (var matchedIndex15 = 0; matchedIndex15 < matchedListLen15; matchedIndex15++) {
+      var matchedData15 = matchedList15[matchedIndex15];
+      output += '<li><a data-currency="' + soy.$$escapeHtmlAttribute(matchedData15.code) + '" href="/change_currency.html?currency=' + soy.$$escapeUri(matchedData15.code) + '" ><em>' + soy.$$escapeHtml(matchedData15.code) + ' </em>' + soy.$$escapeHtml(matchedData15.currency) + '</a></li>';
+    }
+    output += '</ul>';
+  }
+  if (opt_data.currencies.codes) {
+    output += '<ul>';
+    var currencyList30 = opt_data.currencies.codes;
+    var currencyListLen30 = currencyList30.length;
+    for (var currencyIndex30 = 0; currencyIndex30 < currencyListLen30; currencyIndex30++) {
+      var currencyData30 = currencyList30[currencyIndex30];
+      output += '<li><a data-currency="' + soy.$$escapeHtmlAttribute(currencyData30.code) + '" href="/change_currency.html?currency=' + soy.$$escapeUri(currencyData30.code) + '"><em>' + soy.$$escapeHtml(currencyData30.code) + ' </em>' + soy.$$escapeHtml(currencyData30.currency) + '</a></a></li>';
+    }
+    output += '</ul>';
+  }
+  return soydata.VERY_UNSAFE.ordainSanitizedHtml(output);
+};
+if (goog.DEBUG) {
+  hcom.templates.modules.header.common.snippet.currencyselectorlist.soyTemplateName = 'hcom.templates.modules.header.common.snippet.currencyselectorlist';
+}

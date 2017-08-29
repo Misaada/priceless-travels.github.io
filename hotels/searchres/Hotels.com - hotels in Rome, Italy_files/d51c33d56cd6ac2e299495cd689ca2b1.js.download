@@ -1,0 +1,1 @@
+Bootstrapper.bindDependencyImmediate(function(){var Bootstrapper=window["Bootstrapper"];var ensightenOptions=Bootstrapper.ensightenOptions;Bootstrapper.loadScriptCallback("https://vt.myvisualiq.net/1/xymbFUFL0z5gbkRxGkQROw%3D%3D/vt-30.js",function(){(function(){}).call(window)})},1991755,[1916955],477179,[270434]);

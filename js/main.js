@@ -18,7 +18,7 @@ jQuery(function($) {'use strict',
                 type: 'pie'
             },
             title: {
-                text: 'Monthly Points for May - 3500 Points'
+                text: 'Monthly Points for May - 2500 Points'
             },
             tooltip: {
                 pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -38,18 +38,19 @@ jQuery(function($) {'use strict',
                 colorByPoint: true,
                 data: [
                 {
-                    name: 'Accommodation',
-                    y: 200,
-                    sliced: true,
-                    selected: true
+                    name: 'Shopping',
+                    y: 23.45
+                    
                 }, 
                 {
-                    name: 'Other Activities',
+                    name: 'Accommodation',
                     y: 23.45
                 }, 
 				{
                     name: 'Priceless Activities',
-                    y: 23.45
+                    y: 200,
+                    sliced: true,
+                    selected: true
                 }, 
                 {
                     name: 'Other',
